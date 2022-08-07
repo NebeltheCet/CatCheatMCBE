@@ -4,11 +4,19 @@ void mainThread(LPVOID lpParam) {
     FileSys::Initialize("CatCheat");
     FileSys::WriteLogOutput("Injected Cheat.");
 
+    Hooks::InitHooks();
+
+    while (!KeyMap[VK_DELETE] && KeyMap.contains(VK_DELETE))
+        Sleep(1);
+
     FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), EXIT_SUCCESS);
 }
 
 void cleanThread() { /* Called After FreeLibraryAndExitThread */
-    FileSys::WriteLogOutput("Free'd Library.");
+
+    Hooks::UninitHooks();
+
+    FileSys::WriteLogOutput("Uninjected.");
 }
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwCallReason, LPVOID lpReserved) {

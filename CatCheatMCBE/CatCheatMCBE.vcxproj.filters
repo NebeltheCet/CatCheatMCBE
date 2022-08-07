@@ -3,9 +3,46 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="SDK\Utilities\FileSystem\FileSystem.cpp" />
+    <ClCompile Include="Main\Hooks\Hooks.cpp" />
+    <ClCompile Include="Main\Hooks\Functions\KeyItem\hkKeyItem.cpp" />
+    <ClCompile Include="SDK\Utilities\InputSystem\InputSystem.cpp" />
+    <ClCompile Include="SDK\Utilities\Memory\Memory.cpp" />
+    <ClCompile Include="SDK\Libraries\Minhook\hde\hde32.c" />
+    <ClCompile Include="SDK\Libraries\Minhook\hde\hde64.c" />
+    <ClCompile Include="SDK\Libraries\Minhook\buffer.c" />
+    <ClCompile Include="SDK\Libraries\Minhook\hook.c" />
+    <ClCompile Include="SDK\Libraries\Minhook\trampoline.c" />
+    <ClCompile Include="Main\Hooks\Functions\Mouse\hkMouse.cpp" />
+    <ClCompile Include="SDK\Libraries\ImGui\imgui.cpp" />
+    <ClCompile Include="SDK\Libraries\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="SDK\Libraries\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="SDK\Libraries\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="SDK\Libraries\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="SDK\Libraries\ImGui\imgui_widgets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Includes.hpp" />
     <ClInclude Include="SDK\Utilities\FileSystem\FileSystem.hpp" />
+    <ClInclude Include="Main\Hooks\Hooks.hpp" />
+    <ClInclude Include="Main\Hooks\Functions\KeyItem\hkKeyItem.hpp" />
+    <ClInclude Include="SDK\Utilities\InputSystem\InputSystem.hpp" />
+    <ClInclude Include="SDK\Utilities\Memory\Memory.hpp" />
+    <ClInclude Include="SDK\Libraries\Minhook\hde\hde32.h" />
+    <ClInclude Include="SDK\Libraries\Minhook\hde\hde64.h" />
+    <ClInclude Include="SDK\Libraries\Minhook\hde\pstdint.h" />
+    <ClInclude Include="SDK\Libraries\Minhook\hde\table32.h" />
+    <ClInclude Include="SDK\Libraries\Minhook\hde\table64.h" />
+    <ClInclude Include="SDK\Libraries\Minhook\buffer.h" />
+    <ClInclude Include="SDK\Libraries\Minhook\MinHook.h" />
+    <ClInclude Include="SDK\Libraries\Minhook\trampoline.h" />
+    <ClInclude Include="Main\Hooks\Functions\Mouse\hkMouse.hpp" />
+    <ClInclude Include="SDK\Libraries\ImGui\imconfig.h" />
+    <ClInclude Include="SDK\Libraries\ImGui\imgui.h" />
+    <ClInclude Include="SDK\Libraries\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="SDK\Libraries\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="SDK\Libraries\ImGui\imgui_internal.h" />
+    <ClInclude Include="SDK\Libraries\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="SDK\Libraries\ImGui\imstb_textedit.h" />
+    <ClInclude Include="SDK\Libraries\ImGui\imstb_truetype.h" />
   </ItemGroup>
 </Project>
